@@ -1,0 +1,63 @@
+body{
+   
+    background-image: url('bg_img.png');
+    font-family: "Roboto", sans-serif;
+    color: #20253b;
+}
+
+
+
+.card {
+    /* Add shadows to create the "card" effect */
+    background-color: rgba(255, 255, 255, 0.932);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.382);
+    transition: 0.3s;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 50%;
+    padding: 2%;
+    text-align: center;
+
+
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.53);
+  }
+
+.joke-button {
+    padding: 10px;
+    border-radius: 10px;
+    border: 0px;
+    transition-duration: 0.4s;
+    background-color: #BAD6D8;
+
+}
+
+.joke-button:active {
+    transform: translateY(4px);
+}
+
+.joke-button:hover {
+    background-color: #507f95;
+    color: white;
+}
+
+.score {
+    margin-top: 10%;
+}
+
+.score_buttons {
+    transition-duration: 0.4s;
+    background-color: #ffc259;
+    border: 0;
+    border-radius: 2px;
+    padding: 4px 8px 4px 8px;
+}
+
+.score_buttons:active {
+    transform: translateY(5px);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" /> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <title>Sprint 5: Random Dad Joke</title>
+  </head>
+  <body>
+  
+    <div class="card">
+        <div>
+        <h1>Random dad joke</h1>
+        <h3>Click the button to get a random dad joke.</h3>
+        <h3>A joke never hurt anybody, did it?</h3>
+      </div>
+
+      <div>
+        <button id="joke_button" class="joke-button">Get a new joke!</button>
+        <div id="result">
+          <p id="fetched_joke"></p>
+        </div>
+      </div>
+
+      <div id="score" style="display: none;" class="score">
+        <p>You better rate that joke!</p>
+        <p id="score_greet"></p>
+        <div>
+        <button class="score_buttons" id="1">1</button>
+        <button class="score_buttons" id="2">2</button>
+        <button class="score_buttons" id="3">3</button>
+    </div>
+      </div>
+    </div>
+
+
+    <script src="main.js"></script>
+  </body>
+</html>
