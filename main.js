@@ -21,7 +21,8 @@ const getScore1 = (joke) => {
         }
     });
     console.log(reportJokes);
-    document.getElementById("score_greet").innerHTML = "Thanks for rating 1 star!";
+    document.getElementById("score_greet").innerHTML =
+        "Thanks for rating 1 star!";
 };
 const getScore2 = () => {
     reportJokes.forEach((item) => {
@@ -30,7 +31,8 @@ const getScore2 = () => {
         }
     });
     console.log(reportJokes);
-    document.getElementById("score_greet").innerHTML = "Thanks for rating 2 stars!";
+    document.getElementById("score_greet").innerHTML =
+        "Thanks for rating 2 stars!";
 };
 const getScore3 = () => {
     reportJokes.forEach((item) => {
@@ -39,13 +41,22 @@ const getScore3 = () => {
         }
     });
     console.log(reportJokes);
-    document.getElementById("score_greet").innerHTML = "Thanks for rating 3 stars!";
+    document.getElementById("score_greet").innerHTML =
+        "Thanks for rating 3 stars!";
 };
 // Event listeners
-const jokeButton = document.getElementById("joke_button").addEventListener("click", fetchJoke);
-const scoreButton1 = document.getElementById("1").addEventListener("click", () => getScore1(joke));
-const scoreButton2 = document.getElementById("2").addEventListener("click", getScore2);
-const scoreButton3 = document.getElementById("3").addEventListener("click", getScore3);
+const jokeButton = document
+    .getElementById("joke_button")
+    .addEventListener("click", fetchJoke);
+const scoreButton1 = document
+    .getElementById("1")
+    .addEventListener("click", () => getScore1(joke));
+const scoreButton2 = document
+    .getElementById("2")
+    .addEventListener("click", getScore2);
+const scoreButton3 = document
+    .getElementById("3")
+    .addEventListener("click", getScore3);
 const scoreDiv = document.getElementById("score");
 // Asynch function - async/await FETCH
 function fetchJoke() {
@@ -76,7 +87,8 @@ function fetchJoke() {
         }
         catch (error) {
             console.error("Fetch error:", error);
-            document.getElementById("fetched_joke").innerHTML = "Oops! Something's wrong, please try again 😂";
+            document.getElementById("fetched_joke").innerHTML =
+                "Oops! Something's wrong, please try again 😂";
         }
     });
 }
